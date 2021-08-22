@@ -24,6 +24,9 @@ const addNote = function (title, body) {
 
       
 }
+const removeNote = function (title) {
+    console.log(title)
+}
 
 const saveNotes = function (notes) {
     const dataJSON = JSON.stringify(notes)
@@ -46,5 +49,6 @@ const loadNotes = function () {
 
 module.exports = {
     getNotes: getNotes,
-    addNote: addNote
+    addNote: addNote,
+    removeNote: removeNote
 }
